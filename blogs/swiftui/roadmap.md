@@ -8,5 +8,5 @@
 
 ## 基本组件
 
-[Label](/01-Label=Text+Image)
+[Label](/myblogs/blogs/swiftui/01-Label=Text+Image)
 
