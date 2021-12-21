@@ -10,13 +10,10 @@ SwiftUI将 文本内容和图片内容抽象成 Text和Image的View组件，提�
 
 ## Text
 
-
+> Text 是文字内容的抽象
 
 ## Image
 
 
 
-
-
-
-
+<img src="https://raw.githubusercontent.com/lengdaxia/ImageBed/main/uPic/1_Y6E0MBrBaqIWekxmpQL-vg.jpg" alt="testImage" style="zoom:10%;" />
