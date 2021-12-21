@@ -1,14 +1,10 @@
 # Welcome to MyBlogs
 
----
-
 
 
 ## Abount me
 
 as a iOS developer since 2015
-
----
 
 
 
