@@ -4,11 +4,11 @@ Hey there, Welcome to my site!
 
 # Index
 
-## [iOS](/blogs/index) 
+## [iOS](/myblogs/blogs/index) 
 
-### [SwiftUI](/blogs/swiftui/roadmap)
+### [SwiftUI](/myblogs/blogs/swiftui/roadmap)
 
-### [UIKit](/blogs/uikit/roadmap)
+### [UIKit](/myblogs/blogs/uikit/roadmap)
 
 
 
