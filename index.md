@@ -1,4 +1,4 @@
-Hey there, Welcome to my site!
+# Hey there, Welcome to my site!
 
 
 
@@ -13,8 +13,6 @@ Hey there, Welcome to my site!
 
 
 ## About
-
-Blogs: https://lengdaxia.github.io/myblogs/
 
 Github: https://github.com/lengdaxia
 
