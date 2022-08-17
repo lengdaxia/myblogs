@@ -9,9 +9,13 @@
    2- room 数据库和 UI 开发
    3- 内部照相机/USB Web 照相机，索尼 camera 硬件对接
 
-2- Angular 技术栈的管理后台开发和维护
-1- Angular 框架学习
-2- 使用 JS 处理复杂数据
+2. Angular 技术栈的管理后台开发和维护
+   1- Angular 框架学习
+   2- 使用 JS 处理复杂数据
+
+3. iPad 的 PDF 编辑 app
+   1- PDFKit 运用
+   2- 解决复杂 bug
 
 ## 成长的地方
 
@@ -34,3 +38,8 @@
 ## 参加了一次面试
 
 - 注意谈薪资的方式和方法
+
+## 剩下的年度目标
+
+- Coursera IT Project Manager 证书
+- Lightsail 网站翻新和博客更新
