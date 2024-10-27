@@ -27,8 +27,7 @@
 
 ## TODOs
 
-1. Add unit tests and end-to-end test code to increase test coverage
-2. Support dark mode
-3. Responsive UI for mobile and iPad
-4. Complete other features gradually
-5. ...
+1. 単体テストとエンドツーエンドテストのコードを追加して、テストカバレッジを向上させる
+2. ダークモードをサポートする
+3. モバイルと iPad 向けにレスポンシブ UI 対応
+4. 他の機能を徐々に完成させる
