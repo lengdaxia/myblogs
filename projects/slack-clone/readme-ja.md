@@ -6,6 +6,10 @@
 
 "Next.js で作られた Slack のようなアプリで、リアルタイムで複数人のチャットができます。シンプルなバックエンドデザインとクリーンなコード構造を使用しています。"
 
+## App screenshot
+
+![home-0](./screenshots/home-0.png)
+
 ## Features
 
 - NextJS フレームワークを使用し、TailwindCSS と TypeScript（bun でパッケージ管理）
@@ -16,14 +20,14 @@
 - Auth、Workspace、Membership、Channel、Conversation の CRUD 機能
 - チャンネルやメンバーの検索が可能
 - 1 対 1 チャットやチャンネル内のグループチャットをサポート。画像送信、絵文字リアクション、スレッド内のメッセージへの返信が可能
-- Eslint に対応し、0エラーなっており
+- Eslint に対応し、0 エラーなっており
 - Vercel にデプロイして、本番用のライブデモを提供
 
 ---
 
-## Screenshots
+## Entity relation diagram
 
-![home-0](./screenshots/home-0.png)
+![schema](./screenshots/Slack-Schema.png)
 
 ## TODOs
 

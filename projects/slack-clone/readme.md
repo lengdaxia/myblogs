@@ -8,6 +8,10 @@
 
 ### [日本語版ここ](readme-ja.md)
 
+## App screenshot
+
+![home-0](./screenshots/home-0.png)
+
 ## Features
 
 - NextJS framework with TailwindCSS and TypeScript (bun for package management)
@@ -23,9 +27,9 @@
 
 ---
 
-## Screenshots
+## Entity relation diagram
 
-![home-0](./screenshots/home-0.png)
+![schema](./screenshots/Slack-Schema.png)
 
 ## TODOs
 
@@ -33,4 +37,4 @@
 2. Support dark mode
 3. Responsive UI for mobile and iPad
 4. Complete other features gradually
-5. ...
+5. Add doc...
