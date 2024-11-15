@@ -5,3 +5,5 @@
 # Entity Relation Picture
 
 ![ERD](./res/Jira-schema-v2.png)
+
+![AWS](./res/pm-aws%20architecture.png)
