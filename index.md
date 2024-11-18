@@ -6,6 +6,8 @@
 
 ## [Slack-Chat-App](/projects/slack-clone/readme.md)
 
+## [Jira-Project-Manegement-App](/projects/jira-clone/readme.md)
+
 ## About
 
 Github: https://github.com/lengdaxia
