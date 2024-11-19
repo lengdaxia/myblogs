@@ -6,6 +6,7 @@
 
 **Home**
 ![HOME](./res/screenshot-home.png)
+![Project](./res/screenshot-project.jpg)
 
 ## Entity Relation Picture
 
@@ -111,3 +112,68 @@ npx prisma migrate dev --name init
 # 3. load seed data
 npm run seed
 ```
+
+#### 3. S3 image storage
+
+```
+# bucket policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::jira-pm-s3-images/*"
+        }
+    ]
+}
+```
+
+#### 4. Lambda
+
+```
+# handler code
+
+import https from "node:https";
+
+export const handler = async (event) => {
+  const postUserData = JSON.stringify({
+    username: event.request.userAttributes['preffered_username'] || event.userName,
+    cognitoId: event.userName,
+    profilePictureUrl: "i1.jpg",
+    teamId: 1
+  });
+
+  const options = {
+    hostname: "siop1qyu1m.execute-api.ap-northeast-1.amazonaws.com",
+    port: 443,
+    path: "/create-user",
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": Buffer.byteLength(postUserData)
+    }
+  }
+  const responseBody = await new Promise((resolve, reject) => {
+    const req = https.request(options, (res) => {
+      res.setEncoding("utf8");
+      let body = "";
+      res.on("data", chunk => body += chunk);
+      res.on("end", () => resolve(body));
+    });
+
+    req.on("error", reject);
+    req.write(postUserData);
+    req.end();
+  });
+
+  return event;
+};
+
+```
+
+#### 5. API gate-way
+
+#### 6. Amplify
