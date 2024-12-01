@@ -1,5 +1,13 @@
 # Internet
 
+The Internet is a global network of inerconnected computer networks that
+use the internet Protocol Suite(TCP/IP) to communicate, It enables the echange of data,
+information and services across the world, conncecting billions of devices and
+users, The internet has revolutionized comminication, commerce, education, and entertainment,
+becoming an integral part of modern society, It supports various applications and services.
+from web browseing and instant messaging access to information and connectivty, the
+Internet alse raises concerns about privacy, security, and digital divide issues.
+
 ## How does the internet work?
 
 The internet works through a global network of innterconnected computers
