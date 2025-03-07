@@ -1,1 +1,91 @@
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+# 站点设置
+locale: "zh-CN"
+title: "Marlon的博客"
+name: "Marlon"
+description: "分享技术知识和学习心得"
+url: "https://lengdaxia.github.io"
+baseurl: "/myblogs"
+repository: "lengdaxia/myblogs"
+
+# 网站作者信息
+author:
+  name: "Marlon"
+  avatar: "assets/images/avatar.jpg"
+  bio: "软件开发工程师"
+  location: "Japan"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lengdaxia"
+
+# 分页设置
+paginate: 5
+paginate_path: /page:num/
+
+# 搜索设置
+search: true
+search_full_content: true
+
+# SEO相关
+twitter_cards: true
+facebook_comments: true
+og_image: # Open Graph/Twitter 默认图片
+
+# Analytics
+analytics:
+  provider: false
+
+# 评论系统
+comments:
+  provider: false
+
+# 站点页脚
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lengdaxia"
+
+# 插件配置
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# 默认设置
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# 导航设置
+navigation:
+  main:
+    - title: "Projects"
+      url: /projects/
+    - title: "About"
+      url: /about/
+    - title: "Blog"
+      url: /blog/

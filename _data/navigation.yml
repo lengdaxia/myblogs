@@ -1,0 +1,34 @@
+# 主导航链接
+main:
+  - title: "Projects"
+    url: /projects/
+    title_zh-CN: "项目"
+    title_ja: "プロジェクト"
+  - title: "About"
+    url: /about/
+    title_zh-CN: "关于"
+    title_ja: "プロフィール"
+  - title: "Blog"
+    url: /blog/
+    title_zh-CN: "博客"
+    title_ja: "ブログ"
+
+# 中文导航
+zh-CN:
+  main:
+    - title: "项目"
+      url: /projects/
+    - title: "关于"
+      url: /about/
+    - title: "博客"
+      url: /blog/
+
+# 日语导航
+ja:
+  main:
+    - title: "プロジェクト"
+      url: /projects/
+    - title: "プロフィール"
+      url: /about/
+    - title: "ブログ"
+      url: /blog/

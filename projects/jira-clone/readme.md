@@ -1,179 +1,111 @@
-[github repo](https://github.com/lengdaxia/project-management)
-
-## Intro
-
-## ScreenShots
-
-**Home**
-![HOME](./res/screenshot-home.png)
-![Project](./res/screenshot-project.jpg)
-
-## Entity Relation Picture
-
-![ERD](./res/Jira-schema-v2.png)
-
-## Aws cloud achitecture
-
-![AWS](./res/pm-aws%20architecture.png)
-
+---
+layout: single
+title: "Jira 项目管理工具"
+permalink: /projects/jira-clone/
+header:
+  overlay_image: res/screenshot-home.png
+  overlay_filter: "0.3"
 ---
 
-### aws setup
+# Jira 项目管理工具
 
-- VPC,Internet Gateway, RouteTable, SecurityGroup, ect..
-- EC2 commands
+![项目截图](res/screenshot-home.png)
 
-#### Connect to aws ec2 using connect web console
+## 项目链接
 
-```
-# become root user
-sudo su -
+- [GitHub 仓库](https://github.com/lengdaxia/project-management)
 
-# install nvm to manage node
+## 技术标签
+
+- Vue.js
+- Express
+- MongoDB
+- Node.js
+- TypeScript
+
+## 项目介绍
+
+一个功能完整的项目管理系统，支持任务管理、团队协作和项目跟踪。采用现代化的技术栈和模块化的架构设计。
+
+## 主要特性
+
+### 技术栈
+
+- Vue.js + Express + MongoDB
+- TypeScript 类型支持
+- RESTful API 设计
+- AWS 云服务部署
+
+### 核心功能
+
+- 任务看板和列表视图
+- Sprint 规划和跟踪
+- 团队协作功能
+- 数据统计和报表
+
+### 项目管理
+
+- 敏捷开发工作流
+- 项目进度追踪
+- 任务优先级管理
+- 团队成员分配
+
+### 系统特性
+
+- 响应式设计
+- 实时更新
+- 性能优化
+- 安全认证
+
+## 系统架构
+
+![架构图](res/pm-aws%20architecture.png)
+
+## 数据结构
+
+![数据结构图](res/Jira-schema-v2.png)
+
+## AWS 部署说明
+
+### 基础设施配置
+
+- VPC, Internet Gateway
+- Route Table, Security Group
+- EC2, RDS 实例配置
+
+### 服务器设置
+
+```bash
+# 安装 Node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-# active the nvm
 source ~/.bashrc
-
-# nvm install node lts
 nvm install --lts
 
-# check if package installed correcttly
-node -v
-npm -v
-nvm -v
-```
-
-#### update amazon linux packages and nessiary tools
-
-```
+# 安装必要工具
 sudo yum update -y
 sudo yum install git -y
-git --version
-```
 
-clone src code
-
-```
-git clone [clien code]
-cd /[clien dir] && npm i
-
-git clone [server code]
-cd [servce path] && npm i
-```
-
-install PM2 to restart node servce when linux reboot
-
-```
+# 使用 PM2 管理进程
 npm install pm2 -g
-
-```
-
-**Set pm2 to restart automatically on system reboot:**
-
-```
 sudo env PATH=$PATH:$(which node) $(which pm2) startup systemd -u $USER --hp $(eval echo ~$USER)
 ```
 
-**Start the application using the pm2 ecosystem configuration:**
+### 数据库配置
 
-```
-pm2 start ecosystem.config.js
-```
+```bash
+# 数据库连接
+DATABASE_URL="postgresql://[db_username]:[pwd]@[rds-endpoint]:[port]/[db_name]?schema=public"
 
-- useful pm2 commands
-
-```
-pm2 stop all
-pm2 delete all
-pm2 status
-pm2 monit
-```
-
----
-
-### AWS RDS setup
-
-#### 1. Init instance
-
-```
-DATABASE_URL="postgresql://[db_username]:[pwd]@[rds-endpoint or ip]:[port]/[db_name]?schema=public"
-```
-
-#### 2. init database
-
-```
-# 1. create prisma client
+# 初始化数据库
 npx prisma generate
-
-# 2. make first db migrate to create model-schema
 npx prisma migrate dev --name init
-
-# 3. load seed data
 npm run seed
 ```
 
-#### 3. S3 image storage
+## 待办事项
 
-```
-# bucket policy
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::jira-pm-s3-images/*"
-        }
-    ]
-}
-```
-
-#### 4. Lambda
-
-```
-# handler code
-
-import https from "node:https";
-
-export const handler = async (event) => {
-  const postUserData = JSON.stringify({
-    username: event.request.userAttributes['preffered_username'] || event.userName,
-    cognitoId: event.userName,
-    profilePictureUrl: "i1.jpg",
-    teamId: 1
-  });
-
-  const options = {
-    hostname: "siop1qyu1m.execute-api.ap-northeast-1.amazonaws.com",
-    port: 443,
-    path: "/create-user",
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Content-Length": Buffer.byteLength(postUserData)
-    }
-  }
-  const responseBody = await new Promise((resolve, reject) => {
-    const req = https.request(options, (res) => {
-      res.setEncoding("utf8");
-      let body = "";
-      res.on("data", chunk => body += chunk);
-      res.on("end", () => resolve(body));
-    });
-
-    req.on("error", reject);
-    req.write(postUserData);
-    req.end();
-  });
-
-  return event;
-};
-
-```
-
-#### 5. API gate-way
-
-#### 6. Amplify
+1. 完善单元测试和集成测试
+2. 优化移动端体验
+3. 添加更多自定义视图选项
+4. 增强报表和分析功能
+5. 改进文档和使用说明

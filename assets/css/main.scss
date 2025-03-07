@@ -1,0 +1,83 @@
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.site-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+
+  canvas.site-logo-canvas {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    max-width: 110px;
+    border-radius: 50%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.masthead {
+  .greedy-nav {
+    .lang-link {
+      padding: 0 0.5em;
+      color: $link-color;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+
+    .active {
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+}
+
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.page__hero--overlay {
+  padding: 0;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+
+  .motorcycle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

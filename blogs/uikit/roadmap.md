@@ -1,8 +1,0 @@
-# UIkit
-
-
-
-- MVC
-
-- Views
-- ViewController

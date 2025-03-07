@@ -1,40 +1,68 @@
-## Intro
-
-"A Slack-like app made with Next.js that supports real-time chat for multiple users. It uses a simple backend design and clean code structure."
-
-### [LIVE DEMO](https://slack-clone-ebon-phi.vercel.app/)
-
-### [GITHUB REPO](https://github.com/lengdaxia/slack-clone)
-
-### [日本語版ここ](readme-ja.md)
-
-## App screenshot
-
-![home-0](./screenshots/home-0.png)
-
-## Features
-
-- NextJS framework with TailwindCSS and TypeScript (bun for package management)
-- Use Shadcn/ui component to make consistent Web UI apperance
-- Full-Stack, Using Real-time database and convex backend api
-- Support normal password auth and Github, Google OAuth
-- Use Quill Editor for markdown editing and renderering
-- Auth, Workspace, Membership, Channel ,Conversation CURD
-- Search channels or members
-- Support one-on-one chats or group chats in channels. send images, react to messages with emojis, and reply to messages in thread.
-- Eslint supported with 0 syntax error
-- Deployed to vercel for prodution live demo
-
+---
+layout: single
+title: "Slack 聊天应用"
+permalink: /projects/slack-clone/
+header:
+  overlay_image: res/home-0.png
+  overlay_filter: "0.3"
 ---
 
-## Entity relation diagram
+# Slack 聊天应用
 
-![schema](./screenshots/Slack-Schema.png)
+![项目截图](res/home-0.png)
 
-## TODOs
+## 项目链接
 
-1. Add unit tests and end-to-end test code to increase test coverage
-2. Support dark mode
-3. Responsive UI for mobile and iPad
-4. Complete other features gradually
-5. Add doc...
+- [在线演示](https://slack-clone-ebon-phi.vercel.app/)
+- [GitHub 仓库](https://github.com/lengdaxia/slack-clone)
+
+## 技术标签
+
+- React
+- Node.js
+- WebSocket
+- Next.js
+- TypeScript
+
+## 项目介绍
+
+基于 Next.js 构建的实时聊天应用，支持多用户实时通信。采用简洁的后端设计和清晰的代码结构。
+
+## 主要特性
+
+### 技术栈
+
+- NextJS + TailwindCSS + TypeScript
+- 使用 bun 进行包管理
+- Shadcn/ui 组件库
+
+### 后端集成
+
+- 实时数据库
+- Convex 后端 API
+- 完整的 CRUD 操作
+
+### 用户认证
+
+- 密码登录
+- GitHub OAuth
+- Google OAuth
+
+### 聊天功能
+
+- 私聊和群聊
+- 图片发送
+- 表情回应
+- 消息回复
+
+## 数据结构
+
+![数据结构图](res/Slack-Schema.png)
+
+## 待办事项
+
+1. 添加单元测试和端到端测试，提高测试覆盖率
+2. 支持深色模式
+3. 适配移动端和平板设备
+4. 逐步完善其他功能
+5. 补充项目文档
