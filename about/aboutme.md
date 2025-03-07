@@ -9,7 +9,7 @@ header:
 
 <div class="about-container">
   <div class="profile-section">
-    <img src="{{ 'assets/images/avatar.jpg' | relative_url }}" alt="Marlon" class="profile-avatar">
+    <!-- <img src="{{ 'assets/images/avatar.jpg' | relative_url }}" alt="Marlon" class="profile-avatar"> -->
     <div class="profile-info">
       <h1>Marlon</h1>
       <p class="subtitle">全栈开发工程师 @ 东京</p>

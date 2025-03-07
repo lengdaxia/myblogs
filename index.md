@@ -18,7 +18,7 @@ excerpt: >
 
 <div class="intro-header">
   <div class="avatar-wrapper">
-    <img src="{{ 'assets/images/avatar.jpg' | relative_url }}" alt="Marlon" class="avatar">
+    <!-- <img src="{{ 'assets/images/avatar.jpg' | relative_url }}" alt="Marlon" class="avatar"> -->
   </div>
   <div class="intro-text-wrapper">
     <h1>👋 你好，我是 Marlon</h1>

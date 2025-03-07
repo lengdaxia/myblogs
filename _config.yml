@@ -14,6 +14,7 @@ repository: "lengdaxia/myblogs"
 author:
   name: "Marlon"
   avatar: "assets/images/avatar.jpg"
+  avatar_mode: "cover"
   bio: "软件开发工程师"
   location: "Japan"
   links:
@@ -79,6 +80,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+      header:
+        overlay_image: /assets/images/avatar.jpg
+        overlay_filter: 0.5
+        image_description: "Profile Image"
+      classes:
+        - landing
+        - dark-theme
 
 # 导航设置
 navigation:

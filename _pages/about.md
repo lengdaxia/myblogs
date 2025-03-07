@@ -5,7 +5,10 @@ title:
   ja: "プロフィール"
   en: "About Me"
 permalink: /about/
-author_profile: true
+author_profile: false
+classes:
+  - landing
+  - dark-theme
 ---
 
 {% if site.lang == "zh-CN" %}

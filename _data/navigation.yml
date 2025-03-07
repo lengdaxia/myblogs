@@ -8,10 +8,10 @@ main:
     url: /about/
     title_zh-CN: "关于"
     title_ja: "プロフィール"
-  - title: "Blog"
-    url: /blog/
-    title_zh-CN: "博客"
-    title_ja: "ブログ"
+  # - title: "Blog"
+  #   url: /blog/
+  #   title_zh-CN: "博客"
+  #   title_ja: "ブログ"
 
 # 中文导航
 zh-CN:
@@ -20,8 +20,8 @@ zh-CN:
       url: /projects/
     - title: "关于"
       url: /about/
-    - title: "博客"
-      url: /blog/
+    # - title: "博客"
+    #   url: /blog/
 
 # 日语导航
 ja:
@@ -30,5 +30,5 @@ ja:
       url: /projects/
     - title: "プロフィール"
       url: /about/
-    - title: "ブログ"
-      url: /blog/
+    # - title: "ブログ"
+    #   url: /blog/
