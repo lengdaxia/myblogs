@@ -13,10 +13,11 @@ header:
 
 <div class="projects-container" markdown="0">
   <div class="category-nav">
-    <button class="category-btn active" data-category="all">所有项目</button>
-    <button class="category-btn" data-category="extension">浏览器扩展</button>
-    <button class="category-btn" data-category="web">Web 应用</button>
-    <button class="category-btn" data-category="mobile">移动应用</button>
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="extension">Chrome Extension</button>
+    <button class="category-btn" data-category="web">Web</button>
+    <button class="category-btn" data-category="mobile">mobile</button>
+    <button class="category-btn" data-category="tv">TV</button>
   </div>
 
   <div class="projects-list">
@@ -74,7 +75,7 @@ header:
     <!-- Jira Clone -->
     <div class="project-card" data-category="web">
       <h3>📊 Jira 项目管理工具</h3>
-      <p>使用 Vue 和 Node.js 开发的项目管理系统</p>
+      <p>使用 React 和 Node.js 开发的项目管理系统</p>
       <ul>
         <li>任务看板和进度追踪</li>
         <li>团队协作和任务分配</li>
@@ -82,11 +83,154 @@ header:
         <li>自定义工作流程</li>
       </ul>
       <div class="project-meta">
-        <span class="project-tag">Vue</span>
+        <span class="project-tag">React</span>
         <span class="project-tag">Node.js</span>
         <span class="project-tag">AWS</span>
       </div>
       <a href="jira-clone/index" class="project-link">查看详情 →</a>
+    </div>
+    <!-- Joyfull Web -->
+    <div class="project-card" data-category="web">
+      <h3>🍽️ Joyfull 官方网站</h3>
+      <p>日本连锁餐饮品牌官方网站，负责网站开发和维护</p>
+      <ul>
+        <li>与销售部门协作，进行网站设计和开发</li>
+        <li>使用 Photoshop 和 AI 进行设计切图</li>
+        <li>新菜单更新和数据库维护</li>
+        <li>活动页面开发和维护</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">PHP</span>
+        <span class="project-tag">AWS</span>
+        <span class="project-tag">Web</span>
+      </div>
+      <a href="https://www.joyfull.co.jp/" class="project-link" target="_blank">访问网站 →</a>
+    </div>
+
+    <!-- Joyfull App -->
+    <div class="project-card" data-category="mobile">
+      <h3>📱 Joyfull 移动应用</h3>
+      <p>使用 Flutter 开发的跨平台移动应用，支持 iOS 和 Android</p>
+      <ul>
+        <li>从 0 到 1 完整参与产品设计和开发</li>
+        <li>负责应用开发、测试和维护</li>
+        <li>完成应用的上架发布</li>
+        <li>持续优化用户体验</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">Flutter</span>
+        <span class="project-tag">Dart</span>
+        <span class="project-tag">AWS</span>
+      </div>
+      <a href="https://apps.apple.com/jp/app/ジョイフルアプリ/id1433877820" class="project-link" target="_blank">查看应用 →</a>
+    </div>
+
+    <!-- 趣剪短视频 -->
+    <div class="project-card" data-category="mobile">
+      <h3>🎬 趣剪短视频</h3>
+      <p>一款专业的 Vlog 视频剪辑助手，提供强大的视频编辑功能</p>
+      <ul>
+        <li>核心视频剪辑功能开发</li>
+        <li>使用 FFmpeg 实现视频处理</li>
+        <li>优化视频处理性能</li>
+        <li>提升用户剪辑体验</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">iOS</span>
+        <span class="project-tag">FFmpeg</span>
+        <span class="project-tag">视频处理</span>
+      </div>
+      <a href="https://apps.apple.com/jp/app/id1470606794" class="project-link" target="_blank">查看应用 →</a>
+    </div>
+
+    <!-- 石家庄智慧公交 -->
+    <div class="project-card" data-category="mobile">
+      <h3>🚌 石家庄智慧公交</h3>
+      <p>一款智能公交查询应用，提供实时公交位置和路线规划功能</p>
+      <ul>
+        <li>实时显示公交车位置</li>
+        <li>智能路线规划功能</li>
+        <li>地图集成和实时更新</li>
+        <li>优化用户出行体验</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">iOS</span>
+        <span class="project-tag">地图</span>
+        <span class="project-tag">实时数据</span>
+      </div>
+      <a href="https://apps.apple.com/cn/app/石家庄智慧公交/id6464342871" class="project-link" target="_blank">查看应用 →</a>
+    </div>
+
+    <!-- d アニメストア -->
+    <div class="project-card" data-category="tv">
+      <h3>📺 d アニメストア</h3>
+      <p>大型多端流媒体平台（200万+会员），使用 KeplerOS 跨端框架开发</p>
+      <ul>
+        <li>使用 React.lazy 和 Suspense 实现动态模块加载</li>
+        <li>NodeJS 和 Express 搭建本地开发 API 服务</li>
+        <li>设计 PS 平台 Thumbnail Seekbar 组件</li>
+        <li>内存泄漏优化，ANR 率从 5% 降至 0.7%</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">React Native</span>
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">性能优化</span>
+      </div>
+      <a href="#" class="project-link">查看详情 →</a>
+    </div>
+
+    <!-- Lemino -->
+    <div class="project-card" data-category="mobile">
+      <h3>🎬 Lemino 影视平台</h3>
+      <p>使用 Flutter 开发的全平台影视应用，采用 RiverPod 状态管理</p>
+      <ul>
+        <li>重构基础服务层，内存占用降低 50%</li>
+        <li>实现 Lazy Loading 和分页缓存机制</li>
+        <li>列表滑动帧率稳定在 60FPS</li>
+        <li>优化全平台用户体验</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">Flutter</span>
+        <span class="project-tag">RiverPod</span>
+        <span class="project-tag">性能优化</span>
+      </div>
+      <a href="#" class="project-link">查看详情 →</a>
+    </div>
+
+    <!-- 智慧検針 -->
+    <div class="project-card" data-category="mobile">
+      <h3>📱 智慧検針系统</h3>
+      <p>基于 IoT 和 Android 的智能检测系统，采用 AWS 云服务</p>
+      <ul>
+        <li>使用 Kotlin Coroutine 处理异步任务</li>
+        <li>集成 AWS Cognito 和 Rekognition 服务</li>
+        <li>Room 本地缓存策略优化</li>
+        <li>图片分级存储降低 CDN 成本 25%</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">Kotlin</span>
+        <span class="project-tag">AWS</span>
+        <span class="project-tag">IoT</span>
+      </div>
+      <a href="#" class="project-link">查看详情 →</a>
+    </div>
+
+    <!-- 掌上菜场 -->
+    <div class="project-card" data-category="mobile">
+      <h3>🛒 掌上菜场</h3>
+      <p>生鲜电商配送平台，包含用户端、商户端和骑手端的完整生态</p>
+      <ul>
+        <li>用户下单和支付功能</li>
+        <li>骑手实时配送系统</li>
+        <li>商户订单管理和结算</li>
+        <li>完整的支付提现流程</li>
+      </ul>
+      <div class="project-meta">
+        <span class="project-tag">iOS</span>
+        <span class="project-tag">电商</span>
+        <span class="project-tag">支付</span>
+      </div>
+      <a href="#" class="project-link">查看详情 →</a>
     </div>
 
   </div>

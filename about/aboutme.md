@@ -23,9 +23,8 @@ header:
         <h3>前端开发</h3>
         <ul>
           <li>React & React Native</li>
-          <li>Vue.js</li>
           <li>TypeScript</li>
-          <li>现代 CSS & SCSS</li>
+          <li>Tailwind-CSS</li>
         </ul>
       </div>
       <div class="skill-category">
@@ -62,14 +61,21 @@ header:
     <h2>💼 工作经历</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-date">2021 - 现在</div>
+        <div class="timeline-date">2022 - 现在</div>
         <div class="timeline-content">
           <h3>全栈开发工程师</h3>
           <p>负责企业级应用的全栈开发，包括前端界面设计、后端服务开发和云服务部署。</p>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-date">2015 - 2021</div>
+        <div class="timeline-date">2019 - 2022</div>
+        <div class="timeline-content">
+          <h3>全栈开发工程师</h3>
+          <p>学习并使用使用aws和flutter构建企业级应用</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2015 - 2019</div>
         <div class="timeline-content">
           <h3>iOS 开发工程师</h3>
           <p>专注于 iOS 应用开发，使用 Swift 和 Objective-C 开发多个成功上线的应用。</p>
@@ -232,7 +238,7 @@ header:
 
   h3 {
     margin: 0 0 1rem 0;
-    color: #fff;
+    color: #ccc;
   }
 
   p {

@@ -1,4 +1,5 @@
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+$skin: "dirt";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dirt' }}";
 @import "minimal-mistakes";
 
 .site-logo {
